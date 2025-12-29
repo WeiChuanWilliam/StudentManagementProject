@@ -2,6 +2,7 @@ package com.rothur.service.impl;
 
 import com.rothur.dto.StudentDto;
 import com.rothur.entity.Student;
+import com.rothur.exception.ResourceNotFoundException;
 import com.rothur.mapper.StudentMapper;
 import com.rothur.repo.StudentRepository;
 import com.rothur.service.StudentService;
@@ -9,6 +10,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 @AllArgsConstructor
